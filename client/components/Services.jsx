@@ -1,25 +1,25 @@
 export default function Services() {
     const services = [
         {
-            name: 'Web design',
+            name: 'Web Developer',
             icon: '/assets/web-icon.png',
             description: 'Web development is the process of building, programming...',
             link: '#',
         },
         {
-            name: 'Mobile app',
+            name: 'Full Stack Developer',
             icon: '/assets/mobile-icon.png',
             description: 'Web development is the process of building, programming...',
             link: '#',
         },
         {
-            name: 'UI/ UX design',
+            name: 'Software Developer',
             icon: '/assets/ui-icon.png',
             description: 'Web development is the process of building, programming...',
             link: '#',
         },
         {
-            name: 'Graphics design',
+            name: 'Frontend Developer',
             icon: '/assets/graphics-icon.png',
             description: 'Web development is the process of building, programming...',
             link: '#',
@@ -29,7 +29,7 @@ export default function Services() {
         <div id="services" className="w-full px-[12%] py-10 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg font-Ovo">What i offer</h4>
             <h2 className="text-center text-5xl font-Ovo">My services</h2>
-            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I am a Software Developer from Mumbai, India with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
 
             <div className="grid grid-cols-auto gap-6 my-10">
                 {services.map((service) => (
