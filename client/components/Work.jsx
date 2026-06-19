@@ -19,10 +19,10 @@ export default function Work() {
             link: "/clothiq",
         },
         {
-            name: "Photography site",
+            name: "ExcelWeb",
             icon: "/assets/work-3.png",
-            description: "Web Design",
-            link: "/projects/photography",
+            description: "Data Collection & Tracking Platform",
+            link: "/ExcelWeb",
         },
         {
             name: "UI/UX designing",
