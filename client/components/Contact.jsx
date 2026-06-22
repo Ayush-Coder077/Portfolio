@@ -12,14 +12,16 @@ export default function Contact() {
 
     if (!token) {
       setResult(
-        'Please complete verification first.'
+        'Please complete verification.'
       );
       return;
     }
 
     setResult('Sending...');
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(
+      event.target
+    );
 
     formData.append(
       'cf-turnstile-response',
@@ -45,79 +47,66 @@ export default function Contact() {
         event.target.reset();
         setToken('');
       } else {
-        setResult(data.message);
+        setResult(
+          data.message ||
+            'Submission failed'
+        );
       }
     } catch (error) {
       console.error(error);
-      setResult('❌ Something went wrong');
+      setResult(
+        '❌ Failed to send message'
+      );
     }
   };
 
   return (
     <section
       id="contact"
-      className="w-full px-[12%] py-10 scroll-mt-20"
+      className="w-full px-[12%] py-10"
     >
-      <h4 className="text-center mb-2 text-lg font-Ovo">
-        Connect with me
-      </h4>
-
-      <h2 className="text-center text-5xl font-Ovo">
+      <h2 className="text-center text-5xl mb-8">
         Get In Touch
       </h2>
-
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        I'd love to hear from you! Feel free to
-        send me a message.
-      </p>
 
       <form
         onSubmit={onSubmit}
         className="max-w-2xl mx-auto"
       >
-        <input
-          type="hidden"
-          name="subject"
-          value="Ayush Portfolio Contact Form"
-        />
-
         {/* Honeypot */}
         <input
-          type="checkbox"
+          type="text"
           name="botcheck"
           className="hidden"
-          style={{ display: 'none' }}
           tabIndex="-1"
           autoComplete="off"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="w-full border border-gray-300 dark:border-white/30 rounded-lg px-4 py-3 bg-white dark:bg-darkHover/30 text-black dark:text-white"
-          />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          className="w-full border p-3 rounded mb-4"
+        />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="w-full border border-gray-300 dark:border-white/30 rounded-lg px-4 py-3 bg-white dark:bg-darkHover/30 text-black dark:text-white"
-          />
-        </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          className="w-full border p-3 rounded mb-4"
+        />
 
         <textarea
           name="message"
           rows="6"
           placeholder="Your Message"
           required
-          className="w-full border border-gray-300 dark:border-white/30 rounded-lg px-4 py-3 bg-white dark:bg-darkHover/30 text-black dark:text-white mb-6"
+          className="w-full border p-3 rounded mb-4"
         />
 
-        <div className="mb-6 flex justify-center">
+        <div className="mb-4">
           <Turnstile
             siteKey={
               process.env
@@ -131,7 +120,7 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="py-3 px-8 bg-black text-white rounded-full mx-auto flex items-center gap-2 hover:bg-gray-800 transition"
+          className="bg-black text-white px-8 py-3 rounded-full"
         >
           Send Message
         </button>

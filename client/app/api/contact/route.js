@@ -2,7 +2,7 @@ export async function POST(request) {
   try {
     const formData = await request.formData();
 
-    // Honeypot check
+    // Honeypot
     if (formData.get("botcheck")) {
       return Response.json(
         {
@@ -52,23 +52,45 @@ export async function POST(request) {
         {
           success: false,
           message:
-            "Verification failed. Please try again.",
+            "Captcha verification failed",
         },
         { status: 400 }
       );
     }
 
-    // Add Web3Forms key securely
-    formData.append(
+    // Send to Web3Forms
+    const web3Data = new FormData();
+
+    web3Data.append(
       "access_key",
       process.env.WEB3FORMS_ACCESS_KEY
+    );
+
+    web3Data.append(
+      "name",
+      formData.get("name")
+    );
+
+    web3Data.append(
+      "email",
+      formData.get("email")
+    );
+
+    web3Data.append(
+      "message",
+      formData.get("message")
+    );
+
+    web3Data.append(
+      "subject",
+      "Ayush Portfolio Contact Form"
     );
 
     const response = await fetch(
       "https://api.web3forms.com/submit",
       {
         method: "POST",
-        body: formData,
+        body: web3Data,
       }
     );
 
@@ -81,7 +103,7 @@ export async function POST(request) {
     return Response.json(
       {
         success: false,
-        message: "Server error",
+        message: "Server Error",
       },
       { status: 500 }
     );
