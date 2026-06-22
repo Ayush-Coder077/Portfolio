@@ -1,63 +1,87 @@
 'use client';
 
 import { useState } from 'react';
-import { Turnstile } from '@marsidev/react-turnstile';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Contact() {
-  const [result, setResult] = useState('');
-  const [token, setToken] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState('');
+  const [captchaToken, setCaptchaToken] = useState(null);
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    if (!token) {
-      setResult(
-        'Please complete verification.'
-      );
+    if (!captchaToken) {
+      setStatus('Please complete reCAPTCHA');
       return;
     }
 
-    setResult('Sending...');
+    setLoading(true);
+    setStatus('Sending...');
 
-    const formData = new FormData(
-      event.target
+    const formData = new FormData();
+
+    formData.append(
+      'name',
+      e.target.name.value
     );
 
     formData.append(
-      'cf-turnstile-response',
-      token
+      'email',
+      e.target.email.value
+    );
+
+    formData.append(
+      'message',
+      e.target.message.value
+    );
+
+    formData.append(
+      'g-recaptcha-response',
+      captchaToken
     );
 
     try {
       const response = await fetch(
-        '/api/contact',
+        'https://formspree.io/f/xrewgapa',
         {
           method: 'POST',
           body: formData,
+          headers: {
+            Accept: 'application/json',
+          },
         }
       );
 
       const data = await response.json();
 
-      if (data.success) {
-        setResult(
+      console.log(
+        'Formspree Response:',
+        data
+      );
+
+      if (response.ok) {
+        setStatus(
           '✅ Message sent successfully!'
         );
 
-        event.target.reset();
-        setToken('');
+        e.target.reset();
+        setCaptchaToken(null);
       } else {
-        setResult(
-          data.message ||
-            'Submission failed'
+        setStatus(
+          data?.error ||
+            JSON.stringify(data)
         );
       }
     } catch (error) {
       console.error(error);
-      setResult(
-        '❌ Failed to send message'
+
+      setStatus(
+        '❌ Network or server error'
       );
     }
+
+    setLoading(false);
   };
 
   return (
@@ -65,69 +89,69 @@ export default function Contact() {
       id="contact"
       className="w-full px-[12%] py-10"
     >
-      <h2 className="text-center text-5xl mb-8">
+      <h2 className="text-center text-5xl mb-10">
         Get In Touch
       </h2>
 
       <form
-        onSubmit={onSubmit}
+        onSubmit={handleSubmit}
         className="max-w-2xl mx-auto"
       >
-        {/* Honeypot */}
         <input
           type="text"
-          name="botcheck"
-          className="hidden"
-          tabIndex="-1"
-          autoComplete="off"
+          name="_gotcha"
+          style={{ display: 'none' }}
         />
 
         <input
           type="text"
           name="name"
-          placeholder="Your Name"
           required
+          placeholder="Your Name"
           className="w-full border p-3 rounded mb-4"
         />
 
         <input
           type="email"
           name="email"
-          placeholder="Your Email"
           required
+          placeholder="Your Email"
           className="w-full border p-3 rounded mb-4"
         />
 
         <textarea
           name="message"
           rows="6"
-          placeholder="Your Message"
           required
+          placeholder="Your Message"
           className="w-full border p-3 rounded mb-4"
         />
 
         <div className="mb-4">
-          <Turnstile
-            siteKey={
+          <ReCAPTCHA
+            sitekey={
               process.env
-                .NEXT_PUBLIC_TURNSTILE_SITE_KEY
+                .NEXT_PUBLIC_RECAPTCHA_SITE_KEY
             }
-            onSuccess={(token) =>
-              setToken(token)
+            onChange={(token) =>
+              setCaptchaToken(token)
             }
           />
         </div>
 
         <button
           type="submit"
+          disabled={loading}
           className="bg-black text-white px-8 py-3 rounded-full"
         >
-          Send Message
+          {loading
+            ? 'Sending...'
+            : 'Send Message'}
         </button>
 
-        {result && (
+        {status && (
           <p className="mt-4 text-center">
-            {result}
+            {status}
           </p>
         )}
       </form>
