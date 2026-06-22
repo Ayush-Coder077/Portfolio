@@ -112,7 +112,7 @@ export default function Navbar() {
                         className="w-28 cursor-pointer mr-14 dark:hidden"
                     />
                     <img
-                        src="/assets/logo_dark.png"
+                        src="/assets/logo45.png"
                         alt="Logo"
                         className="w-28 cursor-pointer mr-14 hidden dark:block"
                     />

@@ -3,8 +3,8 @@ export default function Footer() {
         <div className="mt-20">
             <div className="text-center">
                 <a href="https://www.linkedin.com/in/ayush-datkhile/">
-                    <img src="/assets/logo.png" alt="" className="w-36 mx-auto mb-2 dark:hidden" />
-                    <img src="/assets/logo_dark.png" alt="" className="w-36 mx-auto mb-2 hidden dark:block" />
+                    <img src="/assets/logo-png.png" alt="" className="w-36 mx-auto mb-2 dark:hidden" />
+                    <img src="/assets/logo45.png" alt="" className="w-36 mx-auto mb-2 hidden dark:block" />
                 </a>
 
 
