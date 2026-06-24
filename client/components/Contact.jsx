@@ -108,7 +108,7 @@ export default function Contact() {
           name="name"
           required
           placeholder="Your Name"
-          className="w-full border p-3 rounded mb-4"
+          className="w-full bg-white dark:bg-[#150327] border border-gray-300 dark:border-white/20 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/50 p-4 rounded-xl mb-4 focus:outline-none focus:border-purple-500"
         />
 
         <input
@@ -116,7 +116,7 @@ export default function Contact() {
           name="email"
           required
           placeholder="Your Email"
-          className="w-full border p-3 rounded mb-4"
+          className="w-full bg-white dark:bg-[#150327] border border-gray-300 dark:border-white/20 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/50 p-4 rounded-xl mb-4 focus:outline-none focus:border-purple-500"
         />
 
         <textarea
@@ -124,7 +124,7 @@ export default function Contact() {
           rows="6"
           required
           placeholder="Your Message"
-          className="w-full border p-3 rounded mb-4"
+          className="w-full bg-white dark:bg-[#150327] border border-gray-300 dark:border-white/20 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/50 p-4 rounded-xl mb-4 focus:outline-none focus:border-purple-500"
         />
 
         <div className="mb-4">

@@ -107,7 +107,7 @@ export default function Navbar() {
             >
                 <a href="/">
                     <img
-                        src="/assets/logo.png"
+                        src="/assets/logo45.png"
                         alt="Logo"
                         className="w-28 cursor-pointer mr-14 dark:hidden"
                     />

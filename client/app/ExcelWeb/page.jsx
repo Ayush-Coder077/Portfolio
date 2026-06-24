@@ -42,7 +42,7 @@ export default function ProjectShowcase() {
 
               <div className="mt-10">
                 <Image
-                  src="/assets/excelweb.png"
+                  src="/assets/Excelweb.png"
                   alt="ExcelWeb Project"
                   width={700}
                   height={450}

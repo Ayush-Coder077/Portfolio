@@ -42,7 +42,7 @@ export default function ProjectShowcase() {
 
               <div className="mt-10">
                 <Image
-                  src="/assets/work-1.png"
+                  src="/assets/Adsable.png"
                   alt="AdsAble AI"
                   width={700}
                   height={450}
@@ -55,15 +55,7 @@ export default function ProjectShowcase() {
           {/* Buttons */}
           <div className="space-y-6">
 
-            <a
-              href="https://adsable-ai.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 h-20 rounded-full border border-white/10 bg-black/30 hover:bg-purple-600 transition"
-            >
-              🚀 Live Demo
-            </a>
-
+           
             <a
               href="https://github.com/Ayush-Coder077/AdsAble.Ai"
               target="_blank"

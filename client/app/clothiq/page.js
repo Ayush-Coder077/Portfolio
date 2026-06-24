@@ -43,7 +43,7 @@ export default function ProjectShowcase() {
 
               <div className="mt-10">
                 <Image
-                  src="/assets/clothiq-preview.png"
+                  src="/assets/clothiq.png"
                   alt="CLOTHIQ"
                   width={700}
                   height={450}
