@@ -61,14 +61,37 @@ export default function About() {
             <h2 className="text-center text-5xl font-Ovo">About me</h2>
 
             <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-                <div className="max-w-max mx-auto relative">
-                    <img src='/assets/profile2.png' alt="" className="w-64 sm:w-80 rounded-3xl max-w-none" />
+                <div className="relative flex justify-center items-center">
 
-                    <div className="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
-                        <img src="/assets/circular.png" alt="" className="w-full animate-spin_slow" />
-                         <img src="/assets/dev-icon.png" alt="" className="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                    </div>
-                </div>
+  <div className="absolute w-72 h-72 rounded-full bg-gradient-to-r from-cyan-500/30 via-purple-500/30 to-pink-500/30 blur-3xl"></div>
+
+  <div className="relative max-w-max mx-auto">
+
+  <img
+    src="/assets/profile2.png"
+    alt=""
+    className="w-72 sm:w-80 rounded-3xl"
+  />
+
+  <div className="absolute -bottom-4 -right-4 w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#1d1d1d] border border-white/10 shadow-2xl flex items-center justify-center">
+
+    <img
+      src="/assets/circular.png"
+      alt=""
+      className="absolute inset-0 w-full h-full animate-spin_slow"
+    />
+
+    <img
+      src="/assets/dev-icon.png"
+      alt=""
+      className="w-8 sm:w-10 z-10"
+    />
+
+  </div>
+
+</div>
+
+</div>
                 <div className="flex-1">
                     <p className="mb-10 max-w-2xl font-Ovo">Software Developer and Full-Stack Developer with a strong foundation in modern web technologies. Passionate about creating high-quality applications, solving complex problems, and delivering impactful digital experiences.</p>
 
