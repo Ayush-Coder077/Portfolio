@@ -27,7 +27,7 @@ export default function Work() {
         {
            
     name: "Developer Portfolio",
-    icon: "/assets/Portfolio.png",
+    icon: "/assets/portfolio.png",
     description: "Next.js Portfolio Website",
     link: "/Portfolio",
 
