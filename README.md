@@ -52,7 +52,7 @@ I enjoy solving real-world problems using clean architecture, REST APIs, databas
 ## Languages
 
 <p>
-<img src="https://skillicons.dev/icons?i=js,ts,java,python,cpp,html,css" />
+<img src="https://skillicons.dev/icons?i=js,ts,html,css" />
 </p>
 
 ## Frontend
@@ -61,41 +61,21 @@ I enjoy solving real-world problems using clean architecture, REST APIs, databas
 <img src="https://skillicons.dev/icons?i=nextjs,react,tailwind" />
 </p>
 
-## Backend
-
-<p>
-<img src="https://skillicons.dev/icons?i=nodejs,express" />
-</p>
-
-## Database
-
-<p>
-<img src="https://skillicons.dev/icons?i=mongodb,postgresql,prisma" />
-</p>
-
 ## Tools
 
 <p>
-<img src="https://skillicons.dev/icons?i=git,github,vercel,vscode,postman" />
+<img src="https://skillicons.dev/icons?i=git,github,vercel,vscode" />
 </p>
 
 ## Services & Integrations
 
 <p>
 
-<img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge"/>
 
 <img src="https://img.shields.io/badge/Formspree-E5122E?style=for-the-badge&logo=formspree&logoColor=white"/>
 
 <img src="https://img.shields.io/badge/Google%20reCAPTCHA-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
 
-<img src="https://img.shields.io/badge/SendGrid-1A82E2?style=for-the-badge&logo=sendgrid&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/NeonDB-00E699?style=for-the-badge"/>
 
 </p>
 
@@ -228,6 +208,7 @@ I enjoy building scalable software, backend systems, APIs, SaaS applications, an
 [datkhileayush@gmail.com](mailto:datkhileayush@gmail.com)
 
 🌐 **Portfolio**
+
 https://ayushdatkhile-dev.vercel.app/
 
 💻 **GitHub**
