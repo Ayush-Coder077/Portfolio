@@ -73,22 +73,52 @@ export default function About() {
     className="w-72 sm:w-80 rounded-3xl"
   />
 
-  <div className="absolute -bottom-4 -right-4 w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#1d1d1d] border border-white/10 shadow-2xl flex items-center justify-center">
+ <div className="absolute -bottom-4 -right-4 w-28 h-28 rounded-full bg-[#1d1d1d] shadow-2xl flex items-center justify-center">
 
-    <img
-      src="/assets/circular.png"
-      alt=""
-      className="absolute inset-0 w-full h-full animate-spin_slow"
-    />
+  {/* Rotating RGB Ring */}
+  <svg
+    viewBox="0 0 200 200"
+    className="absolute inset-0 w-full h-full animate-spin_slow"
+  >
+    <defs>
+      <linearGradient id="rgbGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#00F5FF" />
+        <stop offset="50%" stopColor="#A855F7" />
+        <stop offset="100%" stopColor="#FF0080" />
+      </linearGradient>
 
-    <img
-      src="/assets/dev-icon.png"
-      alt=""
-      className="w-8 sm:w-10 z-10"
-    />
+      <path
+        id="circlePath"
+        d="
+          M100,100
+          m-72,0
+          a72,72 0 1,1 144,0
+          a72,72 0 1,1 -144,0
+        "
+      />
+    </defs>
 
-  </div>
+    <text
+      fill="url(#rgbGradient)"
+      fontSize="13"
+      fontWeight="700"
+      letterSpacing="4"
+      fontFamily="Poppins, sans-serif"
+    >
+      <textPath href="#circlePath" startOffset="0%">
+        SOFTWARE • FULL STACK • DEVELOPER 
+      </textPath>
+    </text>
+  </svg>
 
+  {/* Center Icon */}
+ <img
+  src="/assets/dev-icon.png"
+  alt=""
+  className="relative z-10 w-[70%] h-[70%] object-contain"
+/>
+
+</div>
 </div>
 
 </div>

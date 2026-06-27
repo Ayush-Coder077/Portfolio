@@ -25,10 +25,12 @@ export default function Work() {
             link: "/ExcelWeb",
         },
         {
-            name: "UI/UX designing",
-            icon: "/assets/work-4.png",
-            description: "UI/UX Design",
-            link: "/projects/uiux",
+           
+    name: "Developer Portfolio",
+    icon: "/assets/Portfolio.png",
+    description: "Next.js Portfolio Website",
+    link: "/Portfolio",
+
         },
     ];
 
