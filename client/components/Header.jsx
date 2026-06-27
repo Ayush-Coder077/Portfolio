@@ -38,8 +38,8 @@ export default function Header() {
                 </a>
 
                <a
-  href="/assets/Ayush_Datkhile_Resume.pdf"
-  download="Ayush_Datkhile_Resume.pdf"
+  href="Ayush_Datkhile_Resume(1).pdf"
+  download="Ayush_Datkhile_Resume(1).pdf"
 
                     className="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white"
                 >
