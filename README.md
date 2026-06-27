@@ -1,149 +1,174 @@
 # 🚀 Ayush Datkhile | Software Developer Portfolio
 
 <p align="center">
-  <img src="./public/assets/portfolio-preview.png" alt="Portfolio Preview" width="100%">
+  <img src="./client/public/assets/portfolio.png" alt="Portfolio Preview" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://your-portfolio.vercel.app">
-    <img src="https://img.shields.io/badge/Live%20Website-Visit-success?style=for-the-badge">
+  <a href="https://ayushdatkhile-dev.vercel.app/">
+    <img src="https://img.shields.io/badge/Live-Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white"/>
   </a>
   <a href="https://github.com/Ayush-Coder077">
-    <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github">
+    <img src="https://img.shields.io/badge/GitHub-Ayush--Coder077-181717?style=for-the-badge&logo=github"/>
   </a>
-  <a href="https://linkedin.com/in/YOUR-LINKEDIN">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin">
+  <a href="https://www.linkedin.com/in/ayush-datkhile/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
   </a>
 </p>
 
 ---
 
-# 👋 About
+# 👋 About Me
 
-Welcome to my personal developer portfolio.
+Hi, I'm **Ayush Datkhile**.
 
-I'm **Ayush Datkhile**, a Software Developer passionate about building scalable web applications and solving real-world problems through modern technologies.
+I'm a **Software Developer** passionate about building scalable web applications, AI-powered SaaS products, backend systems, and modern full-stack applications.
 
-This portfolio showcases my projects, technical skills, experience, and the technologies I work with.
+I enjoy solving real-world problems using clean architecture, REST APIs, databases, authentication systems, and cloud services.
 
 ---
 
 # ✨ Features
 
-* 🚀 Built with Next.js
-* ⚛️ React-based architecture
-* 🎨 Modern UI/UX Design
+* ⚡ Built with Next.js
+* 🎨 Modern UI/UX
 * 🌙 Dark & Light Mode
 * 📱 Fully Responsive
-* ⚡ Optimized Performance
-* 🔍 SEO Friendly
+* 🚀 SEO Optimized
+* ⚡ Fast Performance
 * 🎞 Smooth Animations
-* 📂 Project Showcase
-* 👨‍💻 Skills Section
-* 📧 Contact Form
-* 🛡 Google reCAPTCHA Integration
-* 📮 Formspree Contact Form
+* 💼 Project Showcase
 * 📄 Resume Download
-* 🔗 Social Media Links
+* 📧 Contact Form
+* 🛡 Google reCAPTCHA Protection
+* 📮 Formspree Integration
+* 🔗 Social Links
 * ☁️ Deployed on Vercel
 
 ---
 
 # 🛠 Tech Stack
 
+## Languages
+
+<p>
+<img src="https://skillicons.dev/icons?i=js,ts,java,python,cpp,html,css" />
+</p>
+
 ## Frontend
 
-* Next.js
-* React.js
-* JavaScript
-* Tailwind CSS
-* HTML5
-* CSS3
+<p>
+<img src="https://skillicons.dev/icons?i=nextjs,react,tailwind" />
+</p>
 
-## Services
+## Backend
 
-* Formspree
-* Google reCAPTCHA
-* Vercel
+<p>
+<img src="https://skillicons.dev/icons?i=nodejs,express" />
+</p>
+
+## Database
+
+<p>
+<img src="https://skillicons.dev/icons?i=mongodb,postgresql,prisma" />
+</p>
 
 ## Tools
 
-* Git
-* GitHub
-* VS Code
-* Canva
+<p>
+<img src="https://skillicons.dev/icons?i=git,github,vercel,vscode,postman" />
+</p>
+
+## Services & Integrations
+
+<p>
+
+<img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Formspree-E5122E?style=for-the-badge&logo=formspree&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Google%20reCAPTCHA-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/SendGrid-1A82E2?style=for-the-badge&logo=sendgrid&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/NeonDB-00E699?style=for-the-badge"/>
+
+</p>
 
 ---
 
-# 📂 Featured Projects
+# 🚀 Featured Projects
 
 ## 👕 Clothiq
 
-A production-ready fashion e-commerce platform.
-
-### Technologies
-
-* React.js
-* Node.js
-* Express.js
-* MongoDB
-* Stripe
-* Cloudinary
-* SendGrid
-* Vercel
+A production-ready fashion e-commerce platform built with the MERN stack.
 
 ### Features
 
-* User Authentication
+* Authentication & Authorization
+* Admin Dashboard
 * Shopping Cart
 * Product Management
-* Admin Dashboard
-* Order Management
-* Stripe Payments
+* Stripe Payment Gateway
 * Cash on Delivery
+* Cloudinary Image Upload
 * Email Notifications
-* Responsive UI
+* Order Management
+* Responsive Design
+
+**Stack**
+
+React • Node.js • Express • MongoDB • Stripe • Cloudinary • SendGrid
 
 ---
 
 ## 🤖 AdsAble.AI
 
-AI-powered SaaS platform for generating advertisements.
-
-### Technologies
-
-* TypeScript
-* React.js
-* Node.js
-* Express.js
-* PostgreSQL
-* Prisma ORM
-* Clerk Authentication
-* Neon Database
+A modern AI-powered SaaS application for generating advertisements.
 
 ### Features
 
 * AI Advertisement Generation
-* Authentication
+* Clerk Authentication
 * Credit System
 * Subscription Management
-* Webhook Integration
+* PostgreSQL Database
+* Prisma ORM
 * REST APIs
-* Scalable SaaS Architecture
+* Webhook Integration
+
+**Stack**
+
+TypeScript • React • Node.js • PostgreSQL • Prisma • Clerk • NeonDB
 
 ---
 
-# 📸 Preview
-
-Replace the image below with a screenshot or GIF of your portfolio.
+# 📂 Folder Structure
 
 ```text
-public/assets/portfolio-preview.png
+portfolio
+├── public
+│   ├── assets
+│   └── favicon.ico
+│
+├── src
+│   ├── app
+│   ├── components
+│   ├── data
+│   ├── styles
+│   └── utils
+│
+├── package.json
+└── README.md
 ```
 
 ---
 
-# 🚀 Getting Started
+# 🚀 Installation
 
 Clone the repository
 
@@ -151,7 +176,7 @@ Clone the repository
 git clone https://github.com/Ayush-Coder077/portfolio.git
 ```
 
-Go to the project
+Go inside
 
 ```bash
 cd portfolio
@@ -163,37 +188,10 @@ Install dependencies
 npm install
 ```
 
-Run the development server
+Run locally
 
 ```bash
 npm run dev
-```
-
-Visit
-
-```
-http://localhost:3000
-```
-
----
-
-# 📁 Folder Structure
-
-```text
-portfolio/
-│
-├── public/
-│   ├── assets/
-│   └── favicon.ico
-│
-├── src/
-│   ├── app/
-│   ├── components/
-│   ├── styles/
-│   └── data/
-│
-├── package.json
-└── README.md
 ```
 
 ---
@@ -203,63 +201,57 @@ portfolio/
 * AI Agents
 * Agentic Workflows
 * Docker
-* AWS Cloud
-* CI/CD Pipelines
+* AWS
+* CI/CD
 * System Design
 * Microservices
+* Advanced Next.js
 
 ---
 
-# 🤝 Hire Me
+# 💼 Open To Work
 
-I'm currently looking for opportunities as a:
+I'm actively looking for opportunities as:
 
-* Software Developer
-* Backend Developer
-* Full Stack Developer
+* 💻 Software Developer
+* ⚙️ Backend Developer
+* 🌐 Full Stack Developer
 
-If you have an opportunity or would like to collaborate, feel free to connect.
+I enjoy building scalable software, backend systems, APIs, SaaS applications, and AI-powered products.
 
 ---
 
 # 📬 Contact
 
-📧 Email
+📧 **Email**
 
-**[datkhileayush@gmail.com](mailto:datkhileayush@gmail.com)**
+[datkhileayush@gmail.com](mailto:datkhileayush@gmail.com)
 
-💼 LinkedIn
+🌐 **Portfolio**
+https://ayushdatkhile-dev.vercel.app/
 
-https://linkedin.com/in/YOUR-LINKEDIN
-
-💻 GitHub
+💻 **GitHub**
 
 https://github.com/Ayush-Coder077
 
-🌐 Portfolio
+💼 **LinkedIn**
 
-https://your-portfolio.vercel.app
+https://linkedin.com/in/ayush-datkhile/
 
 ---
 
 # ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you like this project, please consider giving it a ⭐ on GitHub.
 
-It motivates me to continue building high-quality projects.
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
+It motivates me to continue building high-quality software and open-source projects.
 
 ---
+
+## ❤️ Thanks for visiting!
 
 <p align="center">
 
-### Thanks for visiting my portfolio! 🚀
-
-Made with ❤️ using **Next.js** and **React.js**
+Made with ❤️ using **Next.js**, **React.js**, and **Tailwind CSS**
 
 </p>
