@@ -8,19 +8,19 @@ export default function Work() {
     const work = [
         {
             name: "Full Stack Ai powered project",
-            icon: "/assets/work-1.png",
+            icon: "/assets/Adsable.png",
             description: "AdsAble.Ai",
             link: "/Adsable",
         },
         {
             name: "Modern Ecommerce Platform",
-            icon: "/assets/work-2.png",
+            icon: "/assets/clothiq.png",
             description: "CLOTHIQ Ecommerce Clothing Website",
             link: "/clothiq",
         },
         {
             name: "ExcelWeb",
-            icon: "/assets/work-3.png",
+            icon: "/assets/Excelweb.png",
             description: "Data Collection & Tracking Platform",
             link: "/ExcelWeb",
         },
