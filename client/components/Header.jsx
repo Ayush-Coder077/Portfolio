@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <div className="w-11/12 max-w-3xl text-center mx-auto min-h-[85vh] flex flex-col items-center justify-center gap-4 pt-20">
             <img
                 src="/assets/user1.png"
                 alt="Ayush Datkhile"
